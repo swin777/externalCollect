@@ -73,6 +73,7 @@ def createTable(tableName):
                   Column('workdate', Text),
                   Column('regdate', Text),
                   Column('chgdate', Text)
+                  #,schema='collect_poi'
             )
     table.create(engine)
     return table

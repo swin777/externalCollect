@@ -23,7 +23,7 @@ def getAll(currDate):
             zipFiles.append(file['name'])
 
     zipFiles.sort(reverse=True)
-    localZipFile = zipFiles[0].split('\\')[-1]
+    localZipFile = zipFiles[0].split(fileSep)[-1]
     urllib.urlretrieve(proxyUrl + '/getcontent/' + zipFiles[0], localPath + localZipFile)
 
     fantasy_zip = zipfile.ZipFile(localPath + localZipFile)
@@ -55,7 +55,7 @@ def getPart():
             txtFiles.append(file['name'])
 
     txtFiles.sort(reverse=True)
-    localFile = txtFiles[0].split('\\')[-1]
+    localFile = txtFiles[0].split(fileSep)[-1]
     urllib.urlretrieve(proxyUrl + '/getcontent/'+txtFiles[0], localPath+localFile)
 
     currTime = datetime.today().strftime("%Y%m%d%H%M%S")

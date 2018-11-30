@@ -1,0 +1,11 @@
+certifi==2018.10.15
+chardet==3.0.4
+get==1.0.3
+idna==2.7
+post==1.0.2
+psycopg2==2.7.6.1
+public==2.0.1
+query-string==1.0.2
+requests==2.20.1
+SQLAlchemy==1.2.14
+urllib3==1.24.1
